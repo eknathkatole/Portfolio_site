@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eknath Katole — Professional Portfolio</title>
+  <meta name="description" content="Eknath Uttam Katole — Full-Stack Developer specializing in NestJS. Portfolio, skills, projects, and contact." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b bg-white/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="#home" class="font-semibold tracking-tight text-xl text-slate-900">Eknath Katole</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-blue-700">About</a>
+        <a href="#skills" class="hover:text-blue-700">Skills</a>
+        <a href="#projects" class="hover:text-blue-700">Projects</a>
+        <a href="#contact" class="hover:text-blue-700">Contact</a>
+        <!-- Socials -->
+        <a href="https://www.linkedin.com/in/eknath-katole-016b09360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border px-3 py-1.5 text-slate-700 hover:text-blue-700 hover:border-blue-300">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="h-4 w-4"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4V8zM8 8h3.8v2.05h.05c.53-1 1.82-2.05 3.75-2.05 4.01 0 4.75 2.64 4.75 6.08V23h-4v-7.1c0-1.69-.03-3.86-2.35-3.86-2.35 0-2.71 1.83-2.71 3.73V23h-4V8z"/></svg>
+          <span class="hidden sm:inline">LinkedIn</span>
+        </a>
+        <a href="https://github.com/eknathkatole" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border px-3 py-1.5 text-slate-700 hover:text-blue-700 hover:border-blue-300">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="h-4 w-4"><path fill="currentColor" d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.15 8.96 7.52 10.41.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.29-3.71-1.29-.5-1.29-1.22-1.64-1.22-1.64-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.67 2.58 1.18 3.21.9.1-.71.38-1.18.69-1.45-2.44-.28-5.02-1.22-5.02-5.43 0-1.2.43-2.18 1.14-2.95-.12-.28-.49-1.41.11-2.94 0 0 .93-.3 3.05 1.13a10.5 10.5 0 0 1 5.55 0c2.12-1.43 3.05-1.13 3.05-1.13.6 1.53.23 2.66.11 2.94.71.77 1.14 1.75 1.14 2.95 0 4.22-2.59 5.14-5.06 5.41.39.33.74.98.74 1.98 0 1.43-.01 2.58-.01 2.93 0 .29.2.63.76.52 4.36-1.46 7.5-5.56 7.5-10.4C23.02 5.24 18.27.5 12 .5Z"/></svg>
+          <span class="hidden sm:inline">GitHub</span>
+        </a>
+      </nav>
+      <button id="menuBtn" class="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-lg border text-slate-700" aria-label="Open menu">☰</button>
+    </div>
+    <div id="mobileNav" class="md:hidden hidden border-t bg-white">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-3">
+        <a href="#about" class="mobile-nav-link hover:text-blue-700">About</a>
+        <a href="#skills" class="mobile-nav-link hover:text-blue-700">Skills</a>
+        <a href="#projects" class="mobile-nav-link hover:text-blue-700">Projects</a>
+        <a href="#contact" class="mobile-nav-link hover:text-blue-700">Contact</a>
+        <div class="flex gap-3 pt-2">
+          <a href="https://www.linkedin.com/in/eknath-katole-016b09360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border px-3 py-1.5">LinkedIn</a>
+          <a href="https://github.com/eknathkatole" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border px-3 py-1.5">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="max-w-6xl mx-auto px-4">
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Hi, I’m <span class="text-blue-700">Eknath Uttam Katole</span> 👋</h1>
+                <p class="mt-4 text-lg text-slate-600">Full-Stack Developer specializing in TypeScript and NestJS. I build scalable, secure, and user-centric web applications from concept to cloud deployment.</p>
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <a href="#contact" class="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-2.5 text-white hover:bg-blue-800 transition-colors">Contact Me</a>
+                    <a href="#" class="inline-flex items-center justify-center rounded-lg border border-slate-300 px-5 py-2.5 text-slate-800 hover:border-blue-300 transition-colors">Download Resume</a>
+                </div>
+            </div>
+            <div class="rounded-2xl border bg-gradient-to-br from-slate-50 to-slate-100 p-6">
+                <ul class="grid grid-cols-2 gap-3 text-sm">
+                    <li class="rounded-lg border bg-white p-3"><span class="font-semibold">📞 Phone</span><br><a href="tel:+919322606058" class="text-blue-700 hover:underline">+91 93226 06058</a></li>
+                    <li class="rounded-lg border bg-white p-3"><span class="font-semibold">✉️ Email</span><br><a href="mailto:eknath.katole.it@ghribmjal.raisoni.net" class="text-blue-700 hover:underline">Send Email</a></li>
+                    <li class="rounded-lg border bg-white p-3 col-span-2"><span class="font-semibold">📍 Location</span><br><span>Shirsoli P.N, Jalgaon (MH)</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 border-t">
+        <h2 class="text-2xl md:text-3xl font-bold">About</h2>
+        <div class="mt-6 grid md:grid-cols-2 gap-8">
+            <p class="leading-relaxed text-slate-700">To secure an entry-level position in web development or software engineering, utilizing strong technical skills to contribute to team objectives and facilitate professional growth.</p>
+            <div>
+                <h3 class="font-semibold text-slate-900">Education</h3>
+                <ul class="mt-3 space-y-3 text-slate-700">
+                    <li class="rounded-lg border p-3"><span class="font-semibold">B.Tech — Information Technology</span><br>G H Raisoni College of Engineering & Business Management, Jalgaon (2022–2026) — <span class="font-medium">CGPA: 7.80</span></li>
+                    <li class="rounded-lg border p-3"><span class="font-semibold">HSC</span> — Swami Vivekanand Jr. College, Jalgaon — <span class="font-medium">70.17%</span></li>
+                    <li class="rounded-lg border p-3"><span class="font-semibold">SSC</span> — Vidya English Medium School, Jalgaon — <span class="font-medium">86.20%</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12 border-t">
+      <h2 class="text-2xl md:text-3xl font-bold">Technical Skills</h2>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-xl border p-5"><h3 class="font-semibold mb-3">Languages</h3><div class="flex flex-wrap gap-2 text-sm"><span class="rounded-md bg-slate-100 px-3 py-1">JavaScript (ES6+)</span><span class="rounded-md bg-slate-100 px-3 py-1">TypeScript</span><span class="rounded-md bg-slate-100 px-3 py-1">Python</span><span class="rounded-md bg-slate-100 px-3 py-1">Java</span><span class="rounded-md bg-slate-100 px-3 py-1">C/C++</span></div></div>
+        <div class="rounded-xl border p-5"><h3 class="font-semibold mb-3">Backend Development</h3><div class="flex flex-wrap gap-2 text-sm"><span class="rounded-md bg-slate-100 px-3 py-1">NestJS</span><span class="rounded-md bg-slate-100 px-3 py-1">Node.js</span><span class="rounded-md bg-slate-100 px-3 py-1">REST APIs</span><span class="rounded-md bg-slate-100 px-3 py-1">JWT Authentication</span><span class="rounded-md bg-slate-100 px-3 py-1">TypeORM / Prisma</span></div></div>
+        <div class="rounded-xl border p-5"><h3 class="font-semibold mb-3">Frontend Development</h3><div class="flex flex-wrap gap-2 text-sm"><span class="rounded-md bg-slate-100 px-3 py-1">React</span><span class="rounded-md bg-slate-100 px-3 py-1">HTML5</span><span class="rounded-md bg-slate-100 px-3 py-1">CSS3</span><span class="rounded-md bg-slate-100 px-3 py-1">API Integration</span><span class="rounded-md bg-slate-100 px-3 py-1">Angular (Basic)</span></div></div>
+        <div class="rounded-xl border p-5"><h3 class="font-semibold mb-3">Databases</h3><div class="flex flex-wrap gap-2 text-sm"><span class="rounded-md bg-slate-100 px-3 py-1">PostgreSQL</span><span class="rounded-md bg-slate-100 px-3 py-1">MySQL</span><span class="rounded-md bg-slate-100 px-3 py-1">MongoDB</span><span class="rounded-md bg-slate-100 px-3 py-1">SQL</span></div></div>
+        <div class="rounded-xl border p-5"><h3 class="font-semibold mb-3">Tools & Version Control</h3><div class="flex flex-wrap gap-2 text-sm"><span class="rounded-md bg-slate-100 px-3 py-1">Git</span><span class="rounded-md bg-slate-100 px-3 py-1">GitHub</span><span class="rounded-md bg-slate-100 px-3 py-1">VS Code</span><span class="rounded-md bg-slate-100 px-3 py-1">JSON</span></div></div>
+        <div class="rounded-xl border p-5"><h3 class="font-semibold mb-3">Cloud & Platforms</h3><div class="flex flex-wrap gap-2 text-sm"><span class="rounded-md bg-slate-100 px-3 py-1">AWS (Basics)</span><span class="rounded-md bg-slate-100 px-3 py-1">Azure (Basics)</span><span class="rounded-md bg-slate-100 px-3 py-1">GCP (Basics)</span></div></div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 border-t">
+        <div class="flex items-end justify-between"><h2 class="text-2xl md:text-3xl font-bold">Projects</h2><div class="hidden sm:flex gap-3"><a href="https://github.com/eknathkatole" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border px-3 py-1.5 text-sm hover:border-blue-300">View GitHub</a><a href="https://www.linkedin.com/in/eknath-katole-016b09360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border px-3 py-1.5 text-sm hover:border-blue-300">Connect on LinkedIn</a></div></div>
+        <div class="mt-6 grid md:grid-cols-3 gap-6">
+            <article class="rounded-2xl border p-5 hover:shadow-lg transition-shadow"><h3 class="font-semibold">Portfolio Website</h3><p class="mt-2 text-sm text-slate-600">Designed and developed a responsive personal website showcasing projects and skills. Hosted via GitHub Pages.</p><p class="mt-3 text-xs text-slate-500">Tech: HTML, Tailwind CSS, JavaScript</p><div class="mt-4 flex gap-2"><a href="https://github.com/eknathkatole" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-md border px-3 py-1.5 text-sm hover:border-blue-300">View Code</a></div></article>
+            <article class="rounded-2xl border p-5 hover:shadow-lg transition-shadow"><h3 class="font-semibold">Real‑Time Currency Converter</h3><p class="mt-2 text-sm text-slate-600">Integrated public APIs to fetch live exchange rates with a clean UI and conversion history.</p><p class="mt-3 text-xs text-slate-500">Tech: HTML, CSS, JavaScript, REST API</p><div class="mt-4 flex gap-2"><a href="https://github.com/eknathkatole" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-md border px-3 py-1.5 text-sm hover:border-blue-300">View Code</a></div></article>
+            <article class="rounded-2xl border p-5 hover:shadow-lg transition-shadow"><h3 class="font-semibold">Amazon Clone Website</h3><p class="mt-2 text-sm text-slate-600">Front‑end clone featuring login, cart and product listing. Firebase Auth + Firestore backend.</p><p class="mt-3 text-xs text-slate-500">Tech: React, CSS, Firebase</p><div class="mt-4 flex gap-2"><a href="https://github.com/eknathkatole" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-md border px-3 py-1.5 text-sm hover:border-blue-300">View Code</a></div></article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 border-t">
+        <h2 class="text-2xl md:text-3xl font-bold">Contact</h2>
+        <p class="mt-2 text-slate-600">I’m open to internships and entry‑level roles in web development & software engineering. Let's connect!</p>
+        <div class="mt-6 grid md:grid-cols-2 gap-8">
+            <form id="contactForm" class="space-y-3 rounded-2xl border p-5">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
+                    <input id="name" type="text" required class="mt-1 w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+                    <input id="email" type="email" required class="mt-1 w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+                    <textarea id="message" rows="4" required class="mt-1 w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                </div>
+                <div class="pt-2">
+                    <button type="submit" class="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-2.5 text-white hover:bg-blue-800">Send Message</button>
+                </div>
+            </form>
+            <div class="rounded-2xl border p-5">
+                <h3 class="font-semibold">Also find me on</h3>
+                <div class="mt-3 flex flex-wrap gap-3">
+                    <a href="https://www.linkedin.com/in/eknath-katole-016b09360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border px-3 py-2 hover:border-blue-300">LinkedIn</a>
+                    <a href="https://github.com/eknathkatole" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border px-3 py-2 hover:border-blue-300">GitHub</a>
+                </div>
+                <div class="mt-6 text-sm text-slate-700">
+                    <p><span class="font-semibold">Phone:</span> <a href="tel:+919322606058" class="text-blue-700 hover:underline">+91 93226 06058</a></p>
+                    <p class="mt-1"><span class="font-semibold">Email:</span> <a href="mailto:eknath.katole.it@ghribmjal.raisoni.net" class="text-blue-700 hover:underline">eknath.katole.it@ghribmjal.raisoni.net</a></p>
+                    <p class="mt-1"><span class="font-semibold">Location:</span> Shirsoli P.N, Jalgaon (MH)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-16 border-t">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-600">
+      <p id="copyright">&copy; 2025 Eknath Katole. All rights reserved.</p>
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/eknathkatole" target="_blank" rel="noopener noreferrer" class="hover:text-blue-700">GitHub</a>
+        <span class="text-slate-300">•</span>
+        <a href="https://www.linkedin.com/in/eknath-katole-016b09360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="hover:text-blue-700">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // --- Mobile menu toggle ---
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    
+    menuBtn?.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => mobileNav.classList.add('hidden'));
+    });
+
+    // --- Contact form submission via WhatsApp ---
+    const contactForm = document.getElementById('contactForm');
+    contactForm?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('message').value.trim();
+      const text = `Hello, I am ${name}. My email: ${email}. Message: ${msg}`;
+      const url = `https://wa.me/9322606058?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+      contactForm.reset();
+    });
+
+    // --- Dynamic copyright year ---
+    const copyright = document.getElementById('copyright');
+    if (copyright) {
+      copyright.innerHTML = `&copy; ${new Date().getFullYear()} Eknath Katole. All rights reserved.`;
+    }
+  </script>
+</body>
+</html>
